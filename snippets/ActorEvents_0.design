@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="104" y="165">
+            <group eventID="1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="1" y="294">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="12" y="327">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </setanim>
+                <if comment="false" x="12" y="354">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="23" y="392">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </setanim>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <amousestate comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </amousestate>
+                    </not>
+                </if>
+            </group>
+            <amousestate comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+                <int id="1" val="1"/>
+            </amousestate>
+        </if>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
