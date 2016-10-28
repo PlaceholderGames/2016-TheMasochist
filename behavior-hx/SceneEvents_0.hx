@@ -83,14 +83,18 @@ class SceneEvents_0 extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* ============================ Click ============================= */
+		addMouseReleasedListener(function(list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if(getActor(1).isMousePressed())
+				if(getActor(1).isMouseReleased())
 				{
-					switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+					switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+				}
+				if(getActor(2).isMouseReleased())
+				{
+					switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
 				}
 			}
 		});
@@ -100,13 +104,30 @@ class SceneEvents_0 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if(getLastCreatedActor().isMouseOver())
+				if(getActor(1).isMouseDown())
 				{
-					getLastCreatedActor().setAnimation("" + "1");
-					if(!(getLastCreatedActor().isMouseOver()))
-					{
-						getLastCreatedActor().setAnimation("" + "0");
-					}
+					getActor(1).setAnimation("" + "Play down");
+				}
+				else
+				{
+					getActor(1).setAnimation("" + "Play up");
+				}
+				if(getActor(2).isMouseDown())
+				{
+					getActor(2).setAnimation("" + "Level select down");
+				}
+				else
+				{
+					getActor(2).setAnimation("" + "Level select up");
+				}
+				if(getActor(3).isMouseReleased())
+				{
+					getActor(3).setAnimation("" + "Sound on down");
+					getActor(3).setAnimation("" + "Sound off up");
+				}
+				else
+				{
+					getActor(3).setAnimation("" + "Sound on up");
 				}
 			}
 		});
