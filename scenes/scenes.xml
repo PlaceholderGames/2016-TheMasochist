@@ -2,4 +2,7 @@
 <scenes>
     <scene desc="" format="3.4.0" id="0" name="Main Menu"/>
     <scene desc="" format="3.4.0" id="1" name="Level Select"/>
+    <scene desc="" format="3.4.0" id="2" name="Tutorial"/>
+    <scene desc="" format="3.4.0" id="3" name="Level 1"/>
+    <scene desc="" format="3.4.0" id="4" name="Level 2"/>
 </scenes>
