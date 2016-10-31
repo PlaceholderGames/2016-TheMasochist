@@ -64,7 +64,10 @@
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
-    <attributes/>
+    <attributes>
+        <number cid="-1" id="0" name="sound" save="true" value="0.0"/>
+        <boolean cid="-1" id="1" name="Sound" save="true" value="true"/>
+    </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
         <poly id="1" name="Rect Up" pts="0.0,0.0#0.0,0.5#1.0,0.5#1.0,0.0"/>

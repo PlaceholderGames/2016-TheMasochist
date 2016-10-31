@@ -9,6 +9,7 @@
         <events>
             <event displayName="Button animation switch" enabled="true" id="2" name="draw" order="4" repeats="true"/>
             <event displayName="Click to switch scene" enabled="true" id="3" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="6" attachedevent="true" class="scripts.ActorEvents_6" classname="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="5" name="ActorEvents_6" oid="-1" package="scripts." shared="false" type="actor">
@@ -64,6 +65,17 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="21" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="22" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Animation switch" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="23" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>

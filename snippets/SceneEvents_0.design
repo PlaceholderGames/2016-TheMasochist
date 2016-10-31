@@ -45,47 +45,52 @@
                 </else>
                 <if comment="false" x="138" y="320">
                     <group eventID="2" id="-1">
-                        <setanim comment="false" x="149" y="353">
-                            <ACTOR eid="3" id="0"/>
-                            <int id="1" val="Sound on down"/>
-                        </setanim>
-                        <setanim comment="false" x="149" y="380">
-                            <ACTOR eid="3" id="0"/>
-                            <int id="1" val="Sound off up"/>
-                        </setanim>
+                        <if comment="false" x="149" y="353">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="160" y="378">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound on down"/>
+                                </setanim>
+                            </group>
+                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="149" y="417">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="160" y="437">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound off down"/>
+                                </setanim>
+                            </group>
+                        </else>
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="3" id="0"/>
-                        <int id="1" val="2"/>
+                        <int id="1" val="0"/>
                     </amousestate>
                 </if>
-                <else comment="false" x="138" y="419">
+                <else comment="false" x="138" y="488">
                     <group eventID="2" id="-1">
-                        <setanim comment="false" x="149" y="439">
-                            <ACTOR eid="3" id="0"/>
-                            <int id="1" val="Sound on up"/>
-                        </setanim>
+                        <if comment="false" x="149" y="508">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="160" y="533">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound on up"/>
+                                </setanim>
+                            </group>
+                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="149" y="572">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="160" y="592">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound off up"/>
+                                </setanim>
+                            </group>
+                        </else>
                     </group>
                 </else>
             </group>
         </draw>
-    </group>
-    <group eventID="2" id="1">
-        <if comment="false" x="658" y="518">
-            <group eventID="2" id="-1"/>
-            <amousestate comment="false" id="0" x="0" y="0">
-                <ACTOR eid="4" id="0"/>
-                <int id="1" val="0"/>
-            </amousestate>
-        </if>
-        <else comment="false" x="658" y="583">
-            <group eventID="2" id="-1">
-                <setanim comment="false" x="669" y="603">
-                    <ACTOR eid="4" id="0"/>
-                    <int id="1" val="Sound off up"/>
-                </setanim>
-            </group>
-        </else>
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
@@ -125,35 +130,63 @@
                         <int id="1" val="2"/>
                     </amousestate>
                 </if>
+                <if comment="false" x="110" y="237">
+                    <group eventID="3" id="-1">
+                        <set-game-val-1 comment="false" x="121" y="270">
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </set-game-val-1>
+                        <if comment="false" x="121" y="300">
+                            <group eventID="3" id="-1">
+                                <setanim comment="false" x="132" y="325">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound on up"/>
+                                </setanim>
+                            </group>
+                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="121" y="364">
+                            <group eventID="3" id="-1">
+                                <setanim comment="false" x="132" y="384">
+                                    <ACTOR eid="3" id="0"/>
+                                    <int id="1" val="Sound off up"/>
+                                </setanim>
+                            </group>
+                        </else>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="3" id="0"/>
+                        <int id="1" val="2"/>
+                    </amousestate>
+                </if>
             </group>
             <int id="0" val="1"/>
         </event-mouse-press-release>
     </group>
-    <group eventID="3" id="1">
-        <if comment="false" x="729" y="546">
-            <group eventID="3" id="-1">
-                <setanim comment="false" x="740" y="579">
-                    <ACTOR eid="3" id="0"/>
-                    <int id="1" val="Sound off up"/>
-                </setanim>
-            </group>
-            <amousestate comment="false" id="0" x="0" y="0">
-                <ACTOR eid="3" id="0"/>
-                <int id="1" val="2"/>
-            </amousestate>
-        </if>
-        <if comment="false" x="729" y="618">
-            <group eventID="3" id="-1">
-                <setanim comment="false" x="740" y="651">
-                    <ACTOR eid="4" id="0"/>
-                    <int id="1" val="Sound on up"/>
-                </setanim>
-            </group>
-            <amousestate comment="false" id="0" x="0" y="0">
-                <ACTOR eid="4" id="0"/>
-                <int id="1" val="2"/>
-            </amousestate>
-        </if>
-    </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="328" y="292">
+            <group eventID="4" id="-1">
+                <if comment="false" x="339" y="317">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="350" y="342">
+                            <ACTOR eid="3" id="0"/>
+                            <int id="1" val="Sound on up"/>
+                        </setanim>
+                    </group>
+                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="339" y="381">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="350" y="401">
+                            <ACTOR eid="3" id="0"/>
+                            <int id="1" val="Sound off up"/>
+                        </setanim>
+                    </group>
+                </else>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>
