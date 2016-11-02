@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="26" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="480" id="7" name="Level 4" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="background 1" opacity="100" order="1" rid="34" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="37" name="Trap 1" sx="1.0" sy="1.0" x="128" y="320" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="43" name="Enter Door 2" sx="1.0" sy="1.0" x="0" y="64" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="43" name="Enter Door 3" sx="1.0" sy="1.0" x="576" y="160" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="37" name="Trap 4" sx="1.0" sy="1.0" x="576" y="416" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="37" name="Trap 5" sx="1.0" sy="1.0" x="608" y="416" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="37" name="Trap 6" sx="1.0" sy="1.0" x="384" y="320" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="37" name="Trap 7" sx="1.0" sy="1.0" x="352" y="320" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="46" name="lava 8" sx="1.0" sy="1.0" x="416" y="448" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="46" name="lava 9" sx="1.0" sy="1.0" x="448" y="448" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="46" name="lava 10" sx="1.0" sy="1.0" x="480" y="448" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="46" name="lava 11" sx="1.0" sy="1.0" x="512" y="448" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="46" name="lava 12" sx="1.0" sy="1.0" x="544" y="448" z="0"/>
+        <actor a="45.0" aid="13" c="false" group="3" id="37" name="Trap 13" sx="1.0" sy="1.0" x="197" y="119" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="384.0" y="160.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="480.0" y="192.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="96.0" y="288.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="256.0" y="96.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="96.0" y="256.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="96.0" y="224.0"/>
+        <p pts="4,96.0,0.0,96.0,16.0,0.0,16.0,0.0,0.0" x="128.0" y="352.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="576.0" y="224.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="160.0" y="128.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="576.0" y="448.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,96.0,0.0,96.0,16.0" x="0.0" y="128.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="352.0" y="416.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,64.0,0.0,64.0,16.0" x="352.0" y="384.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="352.0" y="448.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,64.0,0.0,64.0,16.0" x="352.0" y="352.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

@@ -79,4 +79,40 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet actorid="37" attachedevent="true" class="scripts.ActorEvents_37" classname="scripts.ActorEvents_37" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" name="ActorEvents_37" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_6" classname="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="25" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="26" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="41" attachedevent="true" class="scripts.ActorEvents_41" classname="scripts.ActorEvents_41" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="27" name="ActorEvents_41" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="43" attachedevent="true" class="scripts.ActorEvents_43" classname="scripts.ActorEvents_43" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_43" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_29_29_InflictsDamage" classname="scripts.Design_29_29_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="29" name="Inflicts Damage" oid="-1" package="" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <number default="0.0" defaultValue="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="46" attachedevent="true" class="scripts.ActorEvents_46" classname="scripts.ActorEvents_46" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="30" name="ActorEvents_46" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="48" attachedevent="true" class="scripts.ActorEvents_48" classname="scripts.ActorEvents_48" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="31" name="ActorEvents_48" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
 </pack>

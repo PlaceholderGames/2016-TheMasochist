@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <tileset across="3" atlasID="0" desc="A list of tilesets from &quot;Fortress,&quot; &quot;Plains,&quot; &quot;Cave,&quot; and &quot;Blobs Tileset MiniPack&quot;" down="7" id="39" name="Animated" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="-1" data="" durations="500,500" frames="1" id="2" order="-1"/>
+        <tile collision="-1" data="" durations="100,100,100,100,100,100,100,100" frames="2" id="4" order="-1"/>
+        <tile collision="-1" data="" durations="500,500" frames="3" id="1" order="-1"/>
+        <tile collision="-1" data="" durations="100,100,100,100,100,100" frames="4" id="3" order="-1"/>
+        <tile collision="-1" data="" durations="100,100,100,100,100,100,100,100" frames="5" id="5" order="-1"/>
+        <tile collision="-1" data="" durations="500,200,200,500" frames="6" id="8" order="-1"/>
+        <tile collision="-1" data="" durations="100,100,100,100,100,100,100,100" frames="7" id="9" order="-1"/>
+        <tile collision="-1" data="" durations="500,250,300,500" frames="8" id="10" order="-1"/>
+        <tile collision="-1" data="" durations="100,100,100,100" frames="9" id="36" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="10" id="37" order="-1"/>
+        <tile collision="-1" data="" durations="500,250,300,500" frames="11" id="38" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="12" id="12" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="13" id="13" order="-1"/>
+        <tile collision="-1" data="" durations="125,125,125,125" frames="14" id="14" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="15" id="20" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="16" id="21" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="17" id="22" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="18" id="30" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="19" id="31" order="-1"/>
+        <tile collision="-1" data="" durations="100,100" frames="20" id="32" order="-1"/>
+    </tileset>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="24" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Back Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="false">
         <snippets/>
     </actor>
@@ -209,6 +232,16 @@
         <tile collision="1" data="" durations="100" frames="64" id="64" order="-1"/>
         <tile collision="1" data="" durations="100" frames="65" id="65" order="-1"/>
     </tileset>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="0" continuous="false" desc="" eventsnippetid="28" fixedrot="true" fric="0.2" gid="3" id="43" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Enter Door" oid="-1" pausable="false" physicsMode="0" rest="0.0" shared="false" sprite="44" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="44" name="Enter Door" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="false" name="puertanormal" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,8,16,54,16,54,64,8,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100" height="128" id="1" loop="false" name="abrirpuerta" numframes="5" originx="32" originy="32" sync="false" version="2" width="192"/>
+        <anim across="3" down="2" durations="100,100,100,100,100" height="128" id="2" loop="false" name="doorclosing" numframes="5" originx="32" originy="32" sync="false" version="2" width="192"/>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="9" fixedrot="false" fric="0.2" gid="3" id="10" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Exit Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="11" static="false">
         <snippets/>
     </actor>
@@ -221,6 +254,35 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="0.02" dy="-0.0" height="480" id="31" name="Factory" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="0.0" ypf="0.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="false" fric="0.2" gid="3" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="hints" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="49" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="49" name="hints" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="27" fixedrot="false" fric="0.2" gid="3" id="41" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="LAVA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="42" name="LAVA" shared="false" width="16">
+        <anim across="1" down="1" durations="100" height="1" id="0" loop="true" name="Animation 0" numframes="1" originx="0" originy="0" sync="false" version="2" width="1">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="30" fixedrot="true" fric="0.2" gid="3" id="46" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="lava" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="47" static="true">
+        <snippets>
+            <s enabled="true" id="29">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="47" name="lava" shared="false" width="32">
+        <anim across="2" down="1" durations="100,100" height="32" id="0" loop="true" name="Animation 0" numframes="2" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="14" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Lvl 1 Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="15" static="false">
         <snippets/>
     </actor>
@@ -1743,4 +1805,12 @@
         <tile collision="0" data="" durations="100" frames="350" id="357" order="-1"/>
         <tile collision="0" data="" durations="100" frames="351" id="358" order="-1"/>
     </tileset>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="37" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Trap" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="38" name="Trap" shared="false" width="32">
+        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
 </pack>
