@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="20" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="480" id="3" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="20" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="85.0" height="480" id="3" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
         <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="background 1" opacity="100" order="1" rid="34" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
@@ -9,29 +9,27 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="37" name="Trap 1" sx="1.0" sy="1.0" x="490" y="460" z="0">
-            <snippets>
-                <s enabled="true" id="24"/>
-            </snippets>
-        </actor>
-        <actor a="0.0" aid="2" c="false" group="3" id="37" name="Trap 2" sx="1.0" sy="1.0" x="83" y="385" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="37" name="Trap 3" sx="1.0" sy="1.0" x="260" y="383" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="37" name="Trap 4" sx="1.0" sy="1.0" x="159" y="449" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="37" name="Trap 5" sx="1.0" sy="1.0" x="479" y="352" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="3" id="43" name="Enter Door 6" sx="1.0" sy="1.0" x="0" y="352" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="3" id="43" name="Enter Door 7" sx="1.0" sy="1.0" x="576" y="384" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="37" name="Trap 2" sx="1.0" sy="1.0" x="83" y="353" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="37" name="Trap 3" sx="1.0" sy="1.0" x="260" y="351" z="0"/>
+        <actor a="315.0" aid="4" c="false" group="3" id="37" name="Trap 4" sx="1.0" sy="1.0" x="160" y="432" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="37" name="Trap 5" sx="1.0" sy="1.0" x="479" y="320" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="43" name="Enter Door 6" sx="1.0" sy="1.0" x="0" y="320" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="50" name="Willie 8" sx="1.0" sy="1.0" x="16" y="336" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="60" name="Exit Door 9" sx="1.0" sy="1.0" x="576" y="352" z="0"/>
     </actors>
     <snippets/>
     <terrain>
-        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="480.0" y="384.0"/>
-        <p pts="4,0.0,16.0,0.0,0.0,96.0,0.0,96.0,16.0" x="288.0" y="384.0"/>
+        <p pts="10,32.0,48.0,32.0,64.0,0.0,64.0,64.0,0.0,224.0,0.0,224.0,16.0,64.0,16.0,64.0,32.0,224.0,32.0,224.0,48.0" x="160.0" y="416.0"/>
+        <p pts="3,32.0,0.0,64.0,32.0,0.0,32.0" x="384.0" y="256.0"/>
         <p pts="4,160.0,0.0,160.0,16.0,0.0,16.0,0.0,0.0" x="0.0" y="416.0"/>
-        <p pts="4,160.0,0.0,160.0,16.0,0.0,16.0,0.0,0.0" x="0.0" y="448.0"/>
-        <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="224.0" y="416.0"/>
-        <p pts="4,0.0,16.0,0.0,0.0,192.0,0.0,192.0,16.0" x="192.0" y="448.0"/>
-        <p pts="4,0.0,16.0,0.0,0.0,64.0,0.0,64.0,16.0" x="480.0" y="416.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="0.0" y="384.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="224.0" y="384.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="480.0" y="352.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,64.0,0.0,64.0,16.0" x="480.0" y="384.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="480.0" y="416.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="0.0" y="448.0"/>
+        <p pts="4,0.0,16.0,0.0,0.0,96.0,0.0,96.0,16.0" x="288.0" y="352.0"/>
         <p pts="4,0.0,16.0,0.0,0.0,160.0,0.0,160.0,16.0" x="480.0" y="448.0"/>
-        <p pts="4,0.0,16.0,0.0,0.0,64.0,0.0,64.0,16.0" x="384.0" y="288.0"/>
     </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>

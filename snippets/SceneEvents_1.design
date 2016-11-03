@@ -127,12 +127,12 @@
         </draw>
     </group>
     <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <event-mouse-enter-exit-actor comment="false" x="133" y="170">
-            <group eventID="2" id="-1">
-                <if comment="false" x="144" y="197">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="false" x="155" y="230">
+    <group eventID="3" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="75">
                             <scene eid="3" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -144,12 +144,12 @@
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="3" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
-                <if comment="false" x="144" y="269">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="false" x="155" y="302">
+                <if comment="false" x="26" y="114">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="147">
                             <scene eid="4" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -161,12 +161,12 @@
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="4" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
-                <if comment="true" x="144" y="341">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="true" x="155" y="374">
+                <if comment="false" x="26" y="186">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="219">
                             <scene eid="3" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -176,14 +176,14 @@
                             <color b="0" g="0" id="6" r="0"/>
                         </scene-change-color>
                     </group>
-                    <amousestate comment="true" id="0" x="0" y="0">
+                    <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="5" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
-                <if comment="true" x="144" y="413">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="true" x="155" y="446">
+                <if comment="false" x="26" y="258">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="291">
                             <scene eid="4" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -193,14 +193,14 @@
                             <color b="0" g="0" id="6" r="0"/>
                         </scene-change-color>
                     </group>
-                    <amousestate comment="true" id="0" x="0" y="0">
+                    <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="4" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
-                <if comment="true" x="144" y="485">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="true" x="155" y="518">
+                <if comment="false" x="26" y="330">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="363">
                             <scene eid="3" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -210,14 +210,14 @@
                             <color b="0" g="0" id="6" r="0"/>
                         </scene-change-color>
                     </group>
-                    <amousestate comment="true" id="0" x="0" y="0">
+                    <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="3" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
-                <if comment="false" x="144" y="557">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="false" x="155" y="590">
+                <if comment="false" x="26" y="402">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="435">
                             <scene eid="0" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>
@@ -229,13 +229,12 @@
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="8" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="2"/>
                     </amousestate>
                 </if>
             </group>
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="4"/>
-        </event-mouse-enter-exit-actor>
+            <int id="0" val="1"/>
+        </event-mouse-press-release>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="3" id="-1"/>
 </groups>
