@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <custom-53 comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-59 comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-59>
+                        <int id="1" val="3"/>
+                    </minus>
+                </custom-53>
+                <if comment="false" x="26" y="92">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="130">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <custom-59 comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-59>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <get-val-44-1 comment="false" id="1" x="0" y="0"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

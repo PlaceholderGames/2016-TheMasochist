@@ -6,7 +6,7 @@
                 <create-actor3 comment="false" x="26" y="40">
                     <actortype eid="66" id="0"/>
                     <int id="1" val="120"/>
-                    <int id="2" val="120"/>
+                    <int id="2" val="90"/>
                     <int id="3" val="0"/>
                 </create-actor3>
                 <set-val-41-1 comment="false" x="26" y="67">

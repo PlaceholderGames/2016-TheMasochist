@@ -69,18 +69,61 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_33_33_Jump extends ActorScript
+class Design_35_35_2WayHorizontalMovement extends ActorScript
 {
-	public var _JumpLeftanimation:String;
-	public var _JumpRightanimation:String;
+	public var _LeftControl:String;
+	public var _RightControl:String;
+	public var _MoveX:Float;
+	public var _UseControls:Bool;
+	public var _PreventVerticalMovement:Bool;
+	public var _StartY:Float;
+	public var _LeftAnimationIdle:String;
+	public var _LeftAnimation:String;
+	public var _RightAnimationIdle:String;
+	public var _Speed:Float;
+	public var _RightAnimation:String;
+	public var _UseAnimations:Bool;
+	public var _StopTurning:Bool;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_MoveLeft():Void
+	{
+		_MoveX = asNumber(-1);
+		propertyChanged("_MoveX", _MoveX);
+	}
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_MoveRight():Void
+	{
+		_MoveX = asNumber(1);
+		propertyChanged("_MoveX", _MoveX);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
 		nameMap.set("Actor", "actor");
-		nameMap.set("Jump Left animation", "_JumpLeftanimation");
-		nameMap.set("Jump Right animation", "_JumpRightanimation");
+		nameMap.set("Left Control", "_LeftControl");
+		nameMap.set("Right Control", "_RightControl");
+		nameMap.set("Move X", "_MoveX");
+		_MoveX = 0.0;
+		nameMap.set("Use Controls", "_UseControls");
+		_UseControls = true;
+		nameMap.set("Prevent Vertical Movement", "_PreventVerticalMovement");
+		_PreventVerticalMovement = false;
+		nameMap.set("Start Y", "_StartY");
+		_StartY = 0.0;
+		nameMap.set("Left Animation (Idle)", "_LeftAnimationIdle");
+		nameMap.set("Left Animation", "_LeftAnimation");
+		nameMap.set("Right Animation (Idle)", "_RightAnimationIdle");
+		nameMap.set("Speed", "_Speed");
+		_Speed = 30.0;
+		nameMap.set("Right Animation", "_RightAnimation");
+		nameMap.set("Use Animations", "_UseAnimations");
+		_UseAnimations = true;
+		nameMap.set("Stop Turning", "_StopTurning");
+		_StopTurning = true;
 		
 	}
 	
@@ -88,53 +131,51 @@ class Design_33_33_Jump extends ActorScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		actor.setActorValue("On Ground?", false);
+		_StartY = asNumber(actor.getY());
+		propertyChanged("_StartY", _StartY);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((isKeyPressed("action1") && (actor.getActorValue("On Ground?") == true)))
+				if(_UseControls)
 				{
-					actor.applyImpulse(0, -1, 40);
+					_MoveX = asNumber((asNumber(isKeyDown(_RightControl)) - asNumber(isKeyDown(_LeftControl))));
+					propertyChanged("_MoveX", _MoveX);
 				}
-				runLater(1000 * 0.075, function(timeTask:TimedTask):Void
+				actor.setXVelocity((_MoveX * _Speed));
+				if(_PreventVerticalMovement)
 				{
-					if(actor.isAlive())
-					{
-						actor.setActorValue("On Ground?", false);
-					}
-				}, actor);
-				if((actor.getActorValue("On Ground?") == false))
-				{
-					if((actor.getActorValue("Facing Right?") == true))
-					{
-						actor.setAnimation("" + _JumpLeftanimation);
-						actor.setCurrentFrame(Std.int(0));
-					}
-					else
-					{
-						actor.setAnimation("" + _JumpRightanimation);
-						actor.setCurrentFrame(Std.int(0));
-					}
+					actor.setY(_StartY);
+					actor.setYVelocity(0);
 				}
-			}
-		});
-		
-		/* ======================== Something Else ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(event.thisCollidedWithTile)
+				if((_StopTurning && !(_MoveX == 0)))
 				{
-					for(point in event.points)
+					actor.setAngularVelocity(Utils.RAD * (0));
+				}
+				_MoveX = asNumber(0);
+				propertyChanged("_MoveX", _MoveX);
+				if(_UseAnimations)
+				{
+					if((actor.getXVelocity() == 0))
 					{
-						if((Math.abs(Math.round(Engine.toPixelUnits(point.normalY))) > 0.1))
+						if((actor.getAnimation() == _LeftAnimation))
 						{
-							actor.setActorValue("On Ground?", true);
+							actor.setAnimation("" + _LeftAnimationIdle);
 						}
+						else if((actor.getAnimation() == _RightAnimation))
+						{
+							actor.setAnimation("" + _RightAnimationIdle);
+						}
+					}
+					else if((actor.getXVelocity() < 0))
+					{
+						actor.setAnimation("" + _LeftAnimation);
+					}
+					else if((actor.getXVelocity() > 0))
+					{
+						actor.setAnimation("" + _RightAnimation);
 					}
 				}
 			}

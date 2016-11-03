@@ -69,29 +69,44 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_36_36_DieOnCollisionWithActorType extends ActorScript
+class ActorEvents_64 extends ActorScript
 {
-	public var _ActorType:ActorType;
+	public var _Sign:Actor;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
-		nameMap.set("Actor Type", "_ActorType");
+		nameMap.set("Sign", "_Sign");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Creating ========================= */
+		createRecycledActor(getActorType(66), 120, 90, Script.FRONT);
+		_Sign = getLastCreatedActor();
+		propertyChanged("_Sign", _Sign);
+		_Sign.disableActorDrawing();
+		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(_ActorType, event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled && 3 == mouseState)
 			{
-				actor.say("Health Manager", "_customBlock_SetHealth", [(cast(actor.say("Health Manager", "_customBlock_GetCurrentHealth"), Float) - 2)]);
-				recycleActor(actor.getLastCollidedActor());
+				actor.disableActorDrawing();
+				_Sign.enableActorDrawing();
+			}
+		});
+		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 5 == mouseState)
+			{
+				actor.enableActorDrawing();
+				_Sign.disableActorDrawing();
 			}
 		});
 		
